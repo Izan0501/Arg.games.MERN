@@ -1,0 +1,58 @@
+body {
+    background: linear-gradient(245.59deg, #17264e 0%, #1a123d 28.53%, #491b43 75.52%);
+}
+.contentTxt {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.contentTxt ,.txtDesctipt {
+    max-width: 450px;
+    margin-right: 20px;
+    margin-top: 100px;
+}
+.contentTxt .txtDesctipt h2 {
+    color: #34c0b4;
+    width: 1ch;
+    overflow: hidden;
+    font-size: 3em;
+    margin-bottom: 10px;
+    font-family: 'Courier New', Courier, monospace;
+    animation: 2.5s typing steps(9) infinite alternate;
+    
+}
+@keyframes typing {
+    from {width: 0ch;}
+    to {width: 9ch;}
+}
+.contentTxt .txtDesctipt p {
+    color: #4929a1;
+    margin-top: 40px;
+    font-family: 'Permanent Marker', cursive;
+}
+.txtDesctipt a {
+    text-decoration: none;
+    display: flex;
+    margin-top: 50px;
+    margin-left: 40px;
+    color: white;
+    background: transparent;
+    border: 1px solid white;
+    padding: 10px 40px;
+    letter-spacing: 1px;
+    line-height: 1.4;
+    font-size: 14px;
+    font-weight: 500;
+    border-radius: 25px;
+    width: 200px;
+    text-transform: uppercase;
+    transition: all .55s ease;
+    align-items: center;
+    cursor: pointer;
+}
+.txtDesctipt a:hover {
+    background: transparent;
+    border: 1px solid white;
+    transform: translateX(-8px);
+}
