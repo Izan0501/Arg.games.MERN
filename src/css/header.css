@@ -86,6 +86,9 @@ header .navegation li a:hover {
     color: white;
     
 }
+.dropdown-toggle::after {
+    display: none;
+}
 #cart {
     color: white;
     display: flex;
