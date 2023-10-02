@@ -63,7 +63,7 @@ export const JsCarousel = () => {
                 </button>
             </div>
         </div>
-        </div >
+        </div>
     );
 };
 

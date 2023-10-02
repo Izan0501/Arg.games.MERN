@@ -19,7 +19,7 @@ body {
 .txtDesctipt {
   max-width: 450px;
   margin-right: 20px;
-  margin-top: 100px;
+  margin-top: 510px;
 }
 
 .contentTxt .txtDesctipt h2 {
@@ -29,7 +29,7 @@ body {
   font-size: 3em;
   margin-bottom: 10px;
   font-family: "Courier New", Courier, monospace;
-  animation: 2.5s typing steps(9) infinite alternate;
+  animation: 1.5s typing steps(9) infinite alternate;
 }
 
 /** JsCarousel*/
@@ -38,8 +38,8 @@ body {
   left: 55%;
   top: 50%;
   transform: translate(-50%, -50%);
-  width: 1000px;
-  height: 600px;
+  width: 1320px;
+  height: 800px;
   padding: 50px;
   background-color: #f5f5f5;
   box-shadow: 0 30px 50px #dbdbdb;
@@ -223,7 +223,7 @@ div #item6{
   .contentTxt,
   .txtDesctipt {
     padding-left: 120px !important;
-    margin-top: 190px !important;
+    margin-top: 580px !important;
     width: 600px;
   }
 
@@ -236,7 +236,7 @@ div #item6{
 @media (min-width: 1440px) {
   .contentTxt,
   .txtDesctipt {
-    max-width: 400px;
+    max-width: 600px;
     margin-left: 25px !important;
   }
 
@@ -254,7 +254,7 @@ div #item6{
 
   .slider2 {
     position: absolute !important;
-    margin-top: 140px !important;
+    margin-top: 820px !important;
     padding-left: 455px;
   }
 }
@@ -280,7 +280,6 @@ div #item6{
 
 @media (min-width: 1024px) {
   .slider2 {
-    display: none;
     padding-left: 380px;
     top: 300px;
     left: 570px !important;

@@ -26,6 +26,7 @@ header {
     box-shadow: 3px 8px 15px 0px rgb(0, 0, 0, 0.75);
     background: linear-gradient(245.59deg, #3d174e 0%, #362a6d 28.53%, #1b1c49 75.52%);
 }
+/**headerLinks*/
 .header__link{
     font-family: 'Permanent Marker', cursive;
     color: white;
@@ -79,6 +80,7 @@ header .navegation li a:hover {
 .btn-outline:hover {
     background-color:#4929a1;
 }
+/**dropdownBoots*/
 .dropdown-menu {
     width: 500px;
     height: max-content;
@@ -125,10 +127,35 @@ hr {
     margin-top: -30px;
     color: white;
 }
-
 .mb-0 {
     margin-top: 20px;
     margin-left: 15px;
+}
+/**search*/
+.searchBox {
+    height: 30px;
+    display: flex;
+    cursor: pointer;
+    padding: 10px 20px;
+    background: #2a1b53;
+    border-radius: 30px;
+    align-items: center;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+}
+.searchBox:hover input {
+    width: 200px;
+}
+.searchBox input {
+    width: 0;
+    outline: none;
+    border: none;
+    font-weight: 500;
+    transition: 0.8s;
+    background: transparent;
+}
+.searchBox a .bi-search{
+    color: #e91e63;
+    font-size: 18px;
 }
 /**responsiveMoldel**/
 @media(min-width: 1920px) {
