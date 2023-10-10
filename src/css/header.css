@@ -67,19 +67,7 @@ header .navegation li a:hover {
 .navegation li button::selection {
     background: transparent;
 }
-.btn-outline {
-    border: 1px solid;
-    color: #e91e63;
-    background-color: #241746;
-    margin-top: 18px;
-    margin-left: 140px;
-    width: 39%;
-    font-family: 'Permanent Marker', cursive;
-    transition: all 0.5s ease;
-}
-.btn-outline:hover {
-    background-color:#4929a1;
-}
+
 /**dropdownBoots*/
 .dropdown-menu {
     width: 500px;

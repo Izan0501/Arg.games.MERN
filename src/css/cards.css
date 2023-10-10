@@ -1,0 +1,144 @@
+.btn-outline {
+    border: 1px solid;
+    color: #e91e63;
+    background-color: #241746;
+    margin-top: 18px;
+    margin-left: 140px;
+    width: 39%;
+    font-family: 'Permanent Marker', cursive;
+    transition: all 0.5s ease;
+}
+
+.btn-outline:hover {
+    background-color: #4929a1;
+}
+
+.card .img img {
+    width: max-content;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 15px;
+    transition: 0.3s ease-in-out;
+}
+
+.wrapper {
+    margin-top: 15%;
+    margin-left: 20%;
+    max-width: 1100px;
+    width: 100%;
+    position: relative;
+}
+
+.wrapper button:first-child {
+    left: 22px;
+}
+
+.wrapper button:last-child {
+    right: -22px;
+}
+
+.wrapper .carousel {
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: calc((100% / 4) - 12px);
+    gap: 50px;
+    overflow: hidden;
+}
+
+.carousel .card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    background: transparent;
+    cursor: pointer;
+    border: none;
+    width: 100%;
+}
+
+.carrusel-arrow {
+    border-radius: 50px;
+    background-color: #382a5e;
+    position: absolute;
+    border: 0;
+    z-index: 4;
+    width: 48px;
+    height: 48px;
+    text-align: center;
+    line-height: 50px;
+    transition: all .55s ease;
+    cursor: pointer;
+    top: 35%;
+    font-size: 1.25rem;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.23);
+}
+
+.wrapper button {
+    transition: all .55s ease;
+}
+
+.wrapper .carrusel-next:hover {
+    transform: translateX(8px);
+}
+
+.wrapper .carrusel-prev:hover {
+    transform: translateX(-8px);
+}
+
+.carrusel-arrow:focus {
+    outline: 0;
+}
+
+.carrusel-prev svg {
+    margin-left: 15px;
+}
+
+.carrusel-next svg {
+    margin-left: 17px;
+}
+
+.carrusel-arrow svg {
+    width: 14px;
+    height: 100%;
+    display: flex;
+    color: #e91e63;
+}
+
+.favBtn {
+    position: absolute;
+    color: white;
+    top: 0px;
+    width: 50px;
+    height: 50px;
+    border: 2px solid #c05570;
+    margin-left: 170px;
+    background-color: #283453;
+    border-radius: 50%;
+    transition: all 1s ease;
+}
+
+.favBtn svg {
+    color: white;
+}
+.favBtn svg:hover {
+    color: #e91e63;
+}
+
+.favBtn:hover {
+    background: #241746;
+    transform: translateX(-5px);
+    border: 2px solid #e91e63;
+}
+
+@media screen and (max-width: 900px) {
+    .wrapper .carousel {
+        grid-auto-columns: calc((100% / 3) - 10px);
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .wrapper .carousel {
+        grid-auto-columns: calc((100% / 2) - 9px);
+    }
+}

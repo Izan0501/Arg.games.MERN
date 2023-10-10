@@ -1,11 +1,9 @@
-import React from 'react';
+const CarouselPrev = () => {
 
-export const CarouselPrev = () => {
-
-  document.querySelector("#prev").onclick = function() {
-    const lists = document.querySelectorAll(".item");
-    document.querySelector("#slide").prepend(lists[lists.length - 1]);
+    document.getElementById("prev").onclick = function () {
+      const lists = document.querySelectorAll(".item");
+      document.getElementById("slide").prepend(lists[lists.length - 1]);
+    };
   };
 
-};
-export default CarouselPrev
+  export default CarouselPrev

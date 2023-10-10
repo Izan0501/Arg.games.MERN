@@ -1,6 +1,14 @@
 import React from "react";
+import '../css/main.css';
+import '../css/cards.css';
+import NintendoSection from "../components/NintendoSection";
+import XboxSection from "../components/XboxSection";
+import Ps5Section from "../components/Ps5Section";
 import BootstrapSlider from "../subComponents/BootstrapSlider";
-import JsCarousel from "../subComponents/JsCarousel";
+import JsCarousel from '../components/JsCarousel';
+import ProductCards from "../components/ProductCards";
+import SectionName from "../subComponents/SectionName";
+
 
 export const Main = () => {
     return (
@@ -20,6 +28,15 @@ export const Main = () => {
                 </div>
             </main>
             <BootstrapSlider />
+            <SectionName content={'PS4 Collection'}/>
+            <ProductCards />
+            <SectionName content={'PS5 Collection'}/>
+            <Ps5Section/>
+            <SectionName content={'Xbox X/S Series collection'}/>
+            <XboxSection/>
+            <SectionName content={'Nintendo collection'}/>
+            <NintendoSection/>
+
         </>
     );
 };

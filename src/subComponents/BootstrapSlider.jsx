@@ -1,5 +1,4 @@
 import React from 'react'
-import '../css/main.css'
 import botsImg from '../images/bximg.png'
 import botsImg1 from '../images/bximg1.png'
 import botsImg2 from '../images/bximg2.png'

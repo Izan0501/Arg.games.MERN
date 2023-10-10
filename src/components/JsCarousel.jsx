@@ -3,6 +3,7 @@ import CarouselPrev from '../Functions/CarouselPrev';
 import CarouselNext from '../Functions/CarouselNext';
 
 export const JsCarousel = () => {
+
     return (
         <div className="sliderbox">
             <div className="container">

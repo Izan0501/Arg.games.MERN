@@ -1,10 +1,9 @@
-import React from 'react'
-
-export const CarouselNext = () => {
-    document.querySelector("#next").onclick = function () {
+const CarouselNext = () => {
+    
+    document.getElementById("next").onclick = () => {
         let lists = document.querySelectorAll(".item");
-        document.querySelector("#slide").appendChild(lists[0]);
-    }
-}
+        document.getElementById("slide").appendChild(lists[0]);
+    };
+};
 
 export default CarouselNext
