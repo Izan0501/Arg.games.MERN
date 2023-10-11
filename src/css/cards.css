@@ -108,11 +108,11 @@
 .favBtn {
     position: absolute;
     color: white;
-    top: 0px;
+    top: -0.5px;
     width: 50px;
     height: 50px;
     border: 2px solid #c05570;
-    margin-left: 170px;
+    margin-left: 178px;
     background-color: #283453;
     border-radius: 50%;
     transition: all 1s ease;

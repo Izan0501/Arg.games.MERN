@@ -7,7 +7,7 @@ export const ProductsBtn = (props) => {
                 {props.content}
             </button>
         </h4>
-    )
-}
+    );
+};
 
 export default ProductsBtn

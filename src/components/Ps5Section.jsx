@@ -1,5 +1,5 @@
 import React from 'react'
-import Card from '../subComponents/Card'
+import CardPs from '../subComponents/CardPs'
 import ps5I1 from '../images/ps5-fifa.jpg'
 import ps5I2 from '../images/ps5-2.jpg'
 import ps5I3 from '../images/ps5-3.jpg'
@@ -25,25 +25,25 @@ export const Ps5Section = () => {
                     </svg>
                 </button>
                 <ul className="carousel">
-                    <Card img={ps5I1} />
+                    <CardPs img={ps5I1} />
 
-                    <Card img={ps5I2} />
+                    <CardPs img={ps5I2} />
 
-                    <Card img={ps5I3} />
+                    <CardPs img={ps5I3} />
 
-                    <Card img={ps5I4} />
+                    <CardPs img={ps5I4} />
 
-                    <Card img={ps5I10} />
+                    <CardPs img={ps5I10} />
 
-                    <Card img={ps5I6} />
+                    <CardPs img={ps5I6} />
 
-                    <Card img={ps5I5} />
+                    <CardPs img={ps5I5} />
 
-                    <Card img={ps5I8} />
+                    <CardPs img={ps5I8} />
 
-                    <Card img={ps5I7} />
+                    <CardPs img={ps5I7} />
 
-                    <Card img={ps5I9} />
+                    <CardPs img={ps5I9} />
 
                 </ul>
                 <button className="carrusel-arrow carrusel-next" id="right" data-button="button-next">

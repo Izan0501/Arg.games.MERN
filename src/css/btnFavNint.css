@@ -1,0 +1,25 @@
+.favBtnNin {
+    position: absolute;
+    color: white;
+    top: 0px;
+    width: 50px;
+    height: 50px;
+    border: 2px solid #c05570;
+    margin-left: 145px;
+    background-color: #283453;
+    border-radius: 50%;
+    transition: all 1s ease;
+}
+
+.favBtnNin svg {
+    color: white;
+}
+.favBtnNin svg:hover {
+    color: #e91e63;
+}
+
+.favBtnNin:hover {
+    background: #241746;
+    transform: translateX(-5px);
+    border: 2px solid #e91e63;
+}

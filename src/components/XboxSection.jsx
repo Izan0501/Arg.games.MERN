@@ -1,5 +1,5 @@
 import React from 'react'
-import Card from '../subComponents/Card';
+import CardXbx from '../subComponents/CardXbx';
 import XbxI1 from '../images/xbox-riders.jpg';
 import XbxI2 from '../images/xbox-1.jpg';
 import XbxI3 from '../images/xbox-2.jpg';
@@ -26,25 +26,25 @@ export const XboxSection = () => {
                 </button>
                 <ul className="carousel">
 
-                    <Card img={XbxI1} />
+                    <CardXbx img={XbxI1} />
 
-                    <Card img={XbxI2} />
+                    <CardXbx img={XbxI2} />
 
-                    <Card img={XbxI3} />
+                    <CardXbx img={XbxI3} />
 
-                    <Card img={XbxI4} />
+                    <CardXbx img={XbxI4} />
 
-                    <Card img={XbxI5} />
+                    <CardXbx img={XbxI5} />
 
-                    <Card img={XbxI6} />
+                    <CardXbx img={XbxI6} />
 
-                    <Card img={XbxI7} />
+                    <CardXbx img={XbxI7} />
 
-                    <Card img={XbxI8} />
+                    <CardXbx img={XbxI8} />
 
-                    <Card img={XbxI9} />
+                    <CardXbx img={XbxI9} />
 
-                    <Card img={XbxI10} />
+                    <CardXbx img={XbxI10} />
 
                 </ul>
                 <button className="carrusel-arrow carrusel-next" id="right" data-button="button-next">

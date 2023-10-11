@@ -6,7 +6,7 @@ import XboxSection from "../components/XboxSection";
 import Ps5Section from "../components/Ps5Section";
 import BootstrapSlider from "../subComponents/BootstrapSlider";
 import JsCarousel from '../components/JsCarousel';
-import ProductCards from "../components/ProductCards";
+import Ps4Section from "../components/Ps4Section" ;
 import SectionName from "../subComponents/SectionName";
 
 
@@ -29,14 +29,13 @@ export const Main = () => {
             </main>
             <BootstrapSlider />
             <SectionName content={'PS4 Collection'}/>
-            <ProductCards />
+            <Ps4Section />
             <SectionName content={'PS5 Collection'}/>
             <Ps5Section/>
             <SectionName content={'Xbox X/S Series collection'}/>
             <XboxSection/>
             <SectionName content={'Nintendo collection'}/>
             <NintendoSection/>
-
         </>
     );
 };

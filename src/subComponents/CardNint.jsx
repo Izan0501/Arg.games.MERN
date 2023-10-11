@@ -1,18 +1,19 @@
 import React from 'react'
+import '../css/btnFavNint.css'
 import ProductsBtn from '../subComponents/ProductsBtn';
-import FavBtn from '../subComponents/FavBtn';
+import NintFav from '../subComponents/NintFav'
 
-export const Card = (props) => {
+export const CardNint = (props) => {
     return (
         <>
             <li className="card">
                 <div className="img"><img src={props.img} alt="img" />
-                    <FavBtn />
-                    <ProductsBtn content={'U$D 42'}/>
+                    <NintFav />
+                    <ProductsBtn content={'U$D 74'}/>
                 </div>
             </li>
         </>
     );
 };
 
-export default Card
+export default CardNint

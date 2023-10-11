@@ -1,5 +1,5 @@
 import React from 'react'
-import Card from '../subComponents/Card'
+import CardNint from '../subComponents/CardNint'
 import NI1 from '../images/nintendo-mario.jpg'
 import NI2 from '../images/nintendo-7.jpg'
 import NI3 from '../images/nintendo-sky.jpg'
@@ -26,25 +26,25 @@ export const NintendoSection = () => {
                 </button>
                 <ul className="carousel">
 
-                    <Card img={NI1} />
+                    <CardNint img={NI1} />
 
-                    <Card img={NI2} />
+                    <CardNint img={NI2} />
 
-                    <Card img={NI3} />
+                    <CardNint img={NI3} />
 
-                    <Card img={NI4} />
+                    <CardNint img={NI4} />
 
-                    <Card img={NI5} />
+                    <CardNint img={NI5} />
 
-                    <Card img={NI6} />
+                    <CardNint img={NI6} />
 
-                    <Card img={NI7} />
+                    <CardNint img={NI7} />
 
-                    <Card img={NI8} />
+                    <CardNint img={NI8} />
 
-                    <Card img={NI9} />
+                    <CardNint img={NI9} />
 
-                    <Card img={NI10} />
+                    <CardNint img={NI10} />
 
                 </ul>
                 <button className="carrusel-arrow carrusel-next" id="right" data-button="button-next">

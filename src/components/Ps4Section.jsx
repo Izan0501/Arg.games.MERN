@@ -11,7 +11,7 @@ import ps4I8 from '../images/ps4-5.jpg'
 import ps4I9 from '../images/ps4-6.jpg'
 import ps4I10 from '../images/ps4-9.jpg'
 
-const ProductCards = () => {
+const Ps4Section = () => {
     return (
         <>
             <div className="wrapper">
@@ -60,4 +60,4 @@ const ProductCards = () => {
     );
 };
 
-export default ProductCards
+export default Ps4Section
