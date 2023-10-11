@@ -31,6 +31,25 @@ body {
   animation: 1.5s typing steps(9) infinite alternate;
 }
 
+.icons {
+  position: absolute;
+  top: 60%;
+  padding: 0 9%;
+  margin-left: 125px;
+  margin-top: -100px;
+  transform: translateX(-5%);
+}
+.icons svg {
+  display: block;
+  margin: 26px 0;
+  font-size: 24px;
+  color: white;
+  transition: all .50s ease;
+}
+.icons svg:hover {
+  color: #e91e63;
+  transform: translateY(-5px);
+}
 /** JsCarousel*/
 .container {
   position: absolute;

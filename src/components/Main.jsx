@@ -1,6 +1,7 @@
 import React from "react";
 import '../css/main.css';
 import '../css/cards.css';
+import SocialIcons from "../components/SocialIcons";
 import NintendoSection from "../components/NintendoSection";
 import XboxSection from "../components/XboxSection";
 import Ps5Section from "../components/Ps5Section";
@@ -13,6 +14,7 @@ import SectionName from "../subComponents/SectionName";
 export const Main = () => {
     return (
         <>
+            <SocialIcons/>
             <JsCarousel />
             <main className="contentTxt">
                 <div className="txtDesctipt">
