@@ -6,10 +6,12 @@ export const Card = (props) => {
     return (
         <>
             <li className="card">
-                <div className="img"><img src={props.img} alt="img" />
-                    <FavBtn />
-                    <ProductsBtn content={'U$D 42'}/>
+                <FavBtn />
+                <div className="img">
+                    <img src={props.img} alt="img" />
+                    <img className='imgS' src={props.imgS}/>
                 </div>
+                <ProductsBtn content={props.price}/>
             </li>
         </>
     );

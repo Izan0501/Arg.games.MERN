@@ -1,8 +1,8 @@
 import React from 'react'
-import CardPs from '../subComponents/CardPs'
+import Card from '../subComponents/Card'
 import ps5I1 from '../images/ps5-fifa.jpg'
 import ps5I2 from '../images/ps5-2.jpg'
-import ps5I3 from '../images/ps5-3.jpg'
+import ps5I3 from '../images/ps5-3.png'
 import ps5I4 from '../images/ps5-4.jpg'
 import ps5I5 from '../images/ps5-5.jpg'
 import ps5I6 from '../images/ps5-6.jpg'
@@ -10,6 +10,10 @@ import ps5I7 from '../images/ps5-7.jpg'
 import ps5I8 from '../images/ps5-8.jpg'
 import ps5I9 from '../images/ps5-9.jpg'
 import ps5I10 from '../images/ps5-1.jpg'
+import imgHov1 from '../images/F23.png'
+import imgHov2 from '../images/gow.png'
+import imgHov3 from '../images/HowtsHov.png'
+import imgHov4 from '../images/sp2.png'
 
 export const Ps5Section = () => {
     return (
@@ -25,25 +29,25 @@ export const Ps5Section = () => {
                     </svg>
                 </button>
                 <ul className="carousel">
-                    <CardPs img={ps5I1} />
+                    <Card img={ps5I1} imgS={imgHov1} price={'U$D 59.99'} />
 
-                    <CardPs img={ps5I2} />
+                    <Card img={ps5I2} imgS={imgHov2} price={'U$D 69.99'} />
 
-                    <CardPs img={ps5I3} />
+                    <Card img={ps5I3} imgS={imgHov3} price={'U$D 53.99'} />
 
-                    <CardPs img={ps5I4} />
+                    <Card img={ps5I4} imgS={imgHov4} price={'U$D 69.99'} />
 
-                    <CardPs img={ps5I10} />
+                    <Card img={ps5I10} price={'U$D 87'} />
 
-                    <CardPs img={ps5I6} />
+                    <Card img={ps5I6} price={'U$D 87'} />
 
-                    <CardPs img={ps5I5} />
+                    <Card img={ps5I5} price={'U$D 87'} />
 
-                    <CardPs img={ps5I8} />
+                    <Card img={ps5I8} price={'U$D 87'} />
 
-                    <CardPs img={ps5I7} />
+                    <Card img={ps5I7} price={'U$D 87'} />
 
-                    <CardPs img={ps5I9} />
+                    <Card img={ps5I9} price={'U$D 87'} />
 
                 </ul>
                 <button className="carrusel-arrow carrusel-next" id="right" data-button="button-next">

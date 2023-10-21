@@ -3,13 +3,17 @@ import Card from '../subComponents/Card';
 import ps4I1 from '../images/ps4-1.jpg'
 import ps4I2 from '../images/ps4-2.jpg'
 import ps4I3 from '../images/ps4-4.jpg'
-import ps4I4 from '../images/ps4-7.jpg'
+import ps4I4 from '../images/ps4-7.png'
 import ps4I5 from '../images/ps4-8.jpg'
 import ps4I6 from '../images/ps4-10.jpg'
 import ps4I7 from '../images/ps4-3.jpg'
 import ps4I8 from '../images/ps4-5.jpg'
 import ps4I9 from '../images/ps4-6.jpg'
 import ps4I10 from '../images/ps4-9.jpg'
+import imgHover from '../images/darkS.png'
+import imgHover1 from '../images/plnfall.png'
+import imgHover2 from '../images/LifeS.png'
+import imgHover3 from '../images/spmn.png'
 
 const Ps4Section = () => {
     return (
@@ -25,25 +29,25 @@ const Ps4Section = () => {
                     </svg>
                 </button>
                 <ul className="carousel">
-                    <Card img={ps4I2} />
-                    
-                    <Card img={ps4I1} />
+                    <Card img={ps4I4} imgS={imgHover3} price='U$D 59.99'/>
 
-                    <Card img={ps4I8} />
+                    <Card img={ps4I1} imgS={imgHover1} price='U$D 49.99'/>
 
-                    <Card img={ps4I4} />
+                    <Card img={ps4I8} imgS={imgHover2} price='U$D 19.99'/>
 
-                    <Card img={ps4I10} />
+                    <Card img={ps4I2} imgS={imgHover} price='U$D 39.99' />
 
-                    <Card img={ps4I6} />
+                    <Card img={ps4I10} price='U$D 39.99' />
 
-                    <Card img={ps4I5} />
+                    <Card img={ps4I6} price='U$D 39.99' />
 
-                    <Card img={ps4I3} />
+                    <Card img={ps4I5} price='U$D 39.99' />
 
-                    <Card img={ps4I7} />
+                    <Card img={ps4I3} price='U$D 39.99' />
 
-                    <Card img={ps4I9} />
+                    <Card img={ps4I7} price='U$D 39.99'/>
+
+                    <Card img={ps4I9} price='U$D 39.99'/>
 
                 </ul>
                 <button className="carrusel-arrow carrusel-next" id="right" data-button="button-next">

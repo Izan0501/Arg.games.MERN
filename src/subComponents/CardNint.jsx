@@ -7,10 +7,11 @@ export const CardNint = (props) => {
     return (
         <>
             <li className="card">
-                <div className="img"><img src={props.img} alt="img" />
-                    <NintFav />
-                    <ProductsBtn content={'U$D 74'}/>
+                <NintFav />
+                <div className="img">
+                    <img src={props.img} alt="img" />
                 </div>
+                <ProductsBtn content={props.price}/>
             </li>
         </>
     );

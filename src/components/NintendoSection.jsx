@@ -11,6 +11,7 @@ import NI8 from '../images/nintendo-5.jpg'
 import NI9 from '../images/nintendo-6.jpg'
 import NI10 from '../images/nintendo-1.jpg'
 
+
 export const NintendoSection = () => {
     return (
         <>
@@ -26,25 +27,25 @@ export const NintendoSection = () => {
                 </button>
                 <ul className="carousel">
 
-                    <CardNint img={NI1} />
+                    <CardNint img={NI1} price={'U$D 59.99'} />
 
-                    <CardNint img={NI2} />
+                    <CardNint img={NI6} price={'U$D 59.99'} />
 
-                    <CardNint img={NI3} />
+                    <CardNint img={NI8} price={'U$D 39.99'} />
 
-                    <CardNint img={NI4} />
+                    <CardNint img={NI4} price={'U$D 19.99'} />
 
-                    <CardNint img={NI5} />
+                    <CardNint img={NI5} price={'U$D 39.99'} />
 
-                    <CardNint img={NI6} />
+                    <CardNint img={NI2} price={'U$D 39.99'} />
 
-                    <CardNint img={NI7} />
+                    <CardNint img={NI7} price={'U$D 39.99'} />
 
-                    <CardNint img={NI8} />
+                    <CardNint img={NI3} price={'U$D 39.99'} />
 
-                    <CardNint img={NI9} />
+                    <CardNint img={NI9} price={'U$D 39.99'} />
 
-                    <CardNint img={NI10} />
+                    <CardNint img={NI10} price={'U$D 39.99'} />
 
                 </ul>
                 <button className="carrusel-arrow carrusel-next" id="right" data-button="button-next">
