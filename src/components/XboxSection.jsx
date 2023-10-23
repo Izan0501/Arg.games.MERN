@@ -2,14 +2,19 @@ import React from 'react'
 import Card from '../subComponents/Card';
 import XbxI1 from '../images/xbox-riders.jpg';
 import XbxI2 from '../images/xbox-1.jpg';
-import XbxI3 from '../images/xbox-2.jpg';
-import XbxI4 from '../images/xbox-3.jpg';
+import XbxI3 from '../images/xbox-3.jpg';
+import XbxI4 from '../images/xbox-7.jpg';
 import XbxI5 from '../images/xbox-4.jpg';
 import XbxI6 from '../images/xbox-5.jpg';
-import XbxI7 from '../images/xbox-6.jpg';
-import XbxI8 from '../images/xbox-7.jpg';
+import XbxI7 from '../images/xbox-2.jpg';
+import XbxI8 from '../images/xbox-6.jpg';
 import XbxI9 from '../images/xbox-8.jpg';
 import XbxI10 from '../images/xbox-9.jpg';
+import XbxHov from '../images/RidersX.png';
+import XbxHov1 from '../images/Xelden.png';
+import XbxHov2 from '../images/Xsoulstice.png';
+import XbxHov3 from '../images/Xhalo.png';
+
 
 export const XboxSection = () => {
     return (
@@ -26,13 +31,13 @@ export const XboxSection = () => {
                 </button>
                 <ul className="carousel">
 
-                    <Card img={XbxI1} price={'U$D 39.99'} />
+                    <Card img={XbxI1} imgS={XbxHov} price={'U$D 39.99'} />
 
-                    <Card img={XbxI2} price={'U$D 59.99'} />
+                    <Card img={XbxI2} imgS={XbxHov1} price={'U$D 59.99'} />
 
-                    <Card img={XbxI3} price={'U$D 69.99'} />
+                    <Card img={XbxI3} imgS={XbxHov3} price={'U$D 69.99'} />
 
-                    <Card img={XbxI4} price={'U$D 59.99'} />
+                    <Card img={XbxI4} imgS={XbxHov2} price={'U$D 59.99'} />
 
                     <Card img={XbxI5} price={'U$D 39.99'} />
 

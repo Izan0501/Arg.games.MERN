@@ -1,10 +1,11 @@
 .btn-outline {
+    position: absolute;
     border: 1px solid;
     color: #e91e63;
     font-weight: bold;
     background-color: #241746;
-    margin-top: 24px;
-    margin-left: 60px;
+    margin-top: 17px;
+    margin-left: 72px;
     width: 65%;
     font-family: 'Permanent Marker', cursive;
     transition: all 0.1s ;
@@ -14,7 +15,7 @@
 }
 
 .btn-outline:hover {
-    transform: translateY(4px);
+    transform: translateY(5px);
 }
 
 .btn-outline::before {
@@ -41,16 +42,48 @@
 
 .card {
     width: 238px !important;
-   
+    overflow: hidden;
+    border-radius: 7px;
+    margin-bottom: 0px ;
+    
+}
+
+.card::before {
+    content: '';
+    position: absolute;
+    width: 135px;
+    height: 150%;
+    background: linear-gradient(#00d9ff, #ff1865);
+    animation: animate 2.5s linear infinite;
+}
+
+.card::after{
+    content: '';
+    position: absolute;
+    background: transparent;
+}
+
+@keyframes animate {
+    0%
+    {
+        transform: rotate(0deg);
+    }
+    100%
+    {
+        transform: rotate(360deg);
+    }
 }
 
 .card .img img {
     position: relative;
     width: max-content;
     height: 300px;
+    margin-bottom: -80px;
+    margin-top: 5px;
     object-fit: cover;
     border-radius: 7px;
     transition: 0.3s ease-in-out;
+    padding-left:8px ;
 }
 
 .card .imgS {
@@ -69,7 +102,6 @@
 .img:hover {
     transform:perspective(250px)
     rotateX(10deg);
-    box-shadow: 0px 10px  10px 10px #b63173;
 }
 
 .img::before {
@@ -181,7 +213,7 @@
     width: 50px;
     height: 50px;
     border: 2px solid #e91e63;
-    margin-left: 185px;
+    margin-left: 165px;
     background-color: #29455c;
     border-radius: 50%;
     transition: all 1s ease;

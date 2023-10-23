@@ -2,7 +2,6 @@ import React from "react";
 import '../css/main.css';
 import '../css/cards.css';
 import SocialIcons from "../components/SocialIcons";
-import NintendoSection from "../components/NintendoSection";
 import XboxSection from "../components/XboxSection";
 import Ps5Section from "../components/Ps5Section";
 import BootstrapSlider from "../subComponents/BootstrapSlider";
@@ -26,7 +25,6 @@ export const Main = () => {
                         Xbox series, PS5, switch, PC, among others. Sections for Xbox, PC
                         and Switch will soon be available.
                     </p>
-                    <a href="#">More Info</a>
                 </div>
             </main>
             <BootstrapSlider />
@@ -36,8 +34,7 @@ export const Main = () => {
             <Ps5Section/>
             <SectionName content={'Xbox X/S Series collection'}/>
             <XboxSection/>
-            <SectionName content={'Nintendo collection'}/>
-            <NintendoSection/>
+            
         </>
     );
 };
