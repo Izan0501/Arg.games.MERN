@@ -5,10 +5,10 @@ const JWT_SECRET_KEY = process.env.JWT_SECRET_KEY;
 function createAccessToken(user) {
     //expirationDate
     const expToken = new Date();
-    expToken.setHours(expToken.getHours() + 4);
+    expToken.setHours(expToken.getHours() + 3);
 
     //tokenData
-    const payLoad = {
+    const payload = {
         token_type: 'access',
         user_id: user._id,
         iat: Date.now(),
@@ -16,9 +16,14 @@ function createAccessToken(user) {
     };
 
     //generateToken 
-    return jwt.sign(payLoad, JWT_SECRET_KEY);
+    return jwt.sign(payload, JWT_SECRET_KEY);
+}
+
+function decode (token) {
+    return jwt.decode(token, JWT_SECRET_KEY, true);
 }
 
 module.exports = {
     createAccessToken,
+    decode,
 };

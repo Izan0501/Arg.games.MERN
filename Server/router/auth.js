@@ -1,4 +1,6 @@
 const express = require('express')
+
+ // register/login
 const AuthController = require('../controllers/auth')
 
 //create routes
