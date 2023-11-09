@@ -6,7 +6,7 @@ import { loginFunction } from '../api/loginFunction';
 import { AuthContext } from '../context/AuthContext';
 
 const LoginForm = () => {
-    const {user, setUser} = useContext(AuthContext);
+    const {user, login} = useContext(AuthContext);
 	const navigate = useNavigate()
 	/* 
 	datos del formulario
@@ -34,19 +34,14 @@ const LoginForm = () => {
    */
 	const handleSubmit = async (e) => {
 		e.preventDefault();
-		// datos
 		
 		try {
 			const { access } = await loginFunction(formData);
+			login(access);
+			localStorage.setItem('access', access);
+			console.log(access);
 
-			if (access) {
-				setUser({
-					firstname: 'Izan',
-					lastname: 'zan',
-					email: 'Izan@gmail.com'
-				});
-				navigate('/home');
-			}
+			navigate('/home');
 
 		} catch (error) {
 			console.log(error);
@@ -55,8 +50,8 @@ const LoginForm = () => {
 
 	return (
 		<>
+		    <BackParticles />
 			<div className='form__contain'>
-			<BackParticles />
 			<form  className='form__reg' onSubmit={handleSubmit}>
 				<h2 className='form__tittle'>Login</h2>
 				<div className='form__content'>
@@ -80,7 +75,7 @@ const LoginForm = () => {
 				{error && <p className="alert alert-danger">{error}</p>}
 				<button className='form__button' type="submit">Login</button>
 				<p className='form__link'>
-					¿No tienes una cuenta? <Link to="/">Regístrate</Link>
+					You do not have an account? <Link to="/">Sing Up </Link>
 				</p>
 			</form>
 			</div>

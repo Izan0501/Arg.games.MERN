@@ -50,8 +50,8 @@ const RegisterForm = () => {
 
 	return (
 		<>  
+		    <BackParticles />
 			<div className='form__contain'>
-			<BackParticles />
 			<form className='form__reg' onSubmit={handleSubmit}>
 				<h2 className='form__tittle'>Register</h2>
 				<div className='form__content'>

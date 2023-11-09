@@ -65,10 +65,10 @@ function BackParticles() {
               direction: "none",
               enable: true,
               outModes: {
-                default: "bounce",
+                default: "bounce", //bounce
               },
               random: false,
-              speed: 5.5,
+              speed: 4.5,
               straight: true,
             },
             number: {
