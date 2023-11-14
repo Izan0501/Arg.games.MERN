@@ -1,0 +1,42 @@
+#drop-btn {
+    background: transparent !important; 
+    position: relative;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    margin-left: 20px !important;
+    margin-top: -12px;
+    transition-duration: .60s;
+    box-shadow: 0 5px 30px rgba(0, 0, 0,.5);
+    background: url(../images/icon.jpg) !important;
+    background-size: cover !important;
+}
+
+#drop-btn:hover {
+    box-shadow: 0 5px 10px rgba(0, 0, 0,.5);
+    transform: scale(1.80);
+}
+
+.dropdown-toggle::after {
+    opacity: 0 !important;
+}
+
+#prof-menu {
+    width: max-content;
+}
+.drop-btn,
+.drop-btn-1 {
+    border-radius: 20%; 
+    margin-left: 40%;
+    color: wheat;
+    transition: .6s;
+}
+
+.drop-btn {
+    margin-left: 25%;
+}
+
+.drop-btn-1:hover,
+.drop-btn:hover {
+    color: red;
+}

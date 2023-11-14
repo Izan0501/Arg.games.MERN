@@ -26,6 +26,27 @@ header {
     box-shadow: 3px 8px 15px 0px rgb(0, 0, 0, 0.75);
     background: linear-gradient(245.59deg, #3d174e 0%, #362a6d 28.53%, #1b1c49 75.52%);
 }
+
+#wish-btn {
+    background: transparent !important;
+    border: none;
+    position: relative;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    margin-top: -12px;
+    transition-duration: .60s;
+    margin-left: 30px;
+    color:  #e91e63;
+}
+
+#wish-btn:hover {
+    transform: scale(1.40);
+}
+
+.template-img {
+    width: 50px !important;
+}
 /**headerLinks*/
 .header__link{
     font-family: 'Permanent Marker', cursive;
@@ -44,7 +65,8 @@ header .navegation li a {
     font-size: 15px;
     font-weight: 600;
     text-decoration: none;
-    margin-left: 40px;
+    margin-left: 30px;
+    padding-right: 20px;
     border-bottom: 2px solid transparent;
     transition: all .55s ease;
 }
@@ -54,7 +76,7 @@ header .navegation li a:hover {
 .navegation li svg {
     width: 30px;
     height: 30px;
-    margin-top: -12px;
+    margin-top: -10px;
     color: #19121d;
 }
 .navegation li button {
@@ -72,7 +94,7 @@ header .navegation li a:hover {
 .dropdown-menu {
     width: 500px;
     height: max-content;
-    background: #1a123d;
+    background: #1a123d !important;
     color: white;
     
 }
@@ -111,7 +133,6 @@ hr {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-left: 150px;
     margin-top: -30px;
     color: white;
 }

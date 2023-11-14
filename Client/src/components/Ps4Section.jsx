@@ -29,11 +29,11 @@ const Ps4Section = () => {
                     </svg>
                 </button>
                 <ul className="carousel">
-                    <Card img={ps4I4} imgS={imgHover3} price='U$D 59.99'/>
+                    <Card img={ps4I4} imgS={imgHover3} price='U$D 59.99' />
 
-                    <Card img={ps4I1} imgS={imgHover1} price='U$D 49.99'/>
+                    <Card img={ps4I1} imgS={imgHover1} price='U$D 49.99' />
 
-                    <Card img={ps4I8} imgS={imgHover2} price='U$D 19.99'/>
+                    <Card img={ps4I8} imgS={imgHover2} price='U$D 19.99' />
 
                     <Card img={ps4I2} imgS={imgHover} price='U$D 39.99' />
 
@@ -45,9 +45,9 @@ const Ps4Section = () => {
 
                     <Card img={ps4I3} price='U$D 39.99' />
 
-                    <Card img={ps4I7} price='U$D 39.99'/>
+                    <Card img={ps4I7} price='U$D 39.99' />
 
-                    <Card img={ps4I9} price='U$D 39.99'/>
+                    <Card img={ps4I9} price='U$D 39.99' />
 
                 </ul>
                 <button className="carrusel-arrow carrusel-next" id="right" data-button="button-next">

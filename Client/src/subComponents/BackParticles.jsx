@@ -68,7 +68,7 @@ function BackParticles() {
                 default: "bounce", //bounce
               },
               random: false,
-              speed: 4.5,
+              speed: 6.5,
               straight: true,
             },
             number: {

@@ -8,17 +8,13 @@ import { AuthContext } from '../context/AuthContext';
 const LoginForm = () => {
     const {user, login} = useContext(AuthContext);
 	const navigate = useNavigate()
-	/* 
-	datos del formulario
-   */
+	
 	const [formData, setFormData] = useState({
 		email: '',
 		password: '',
 	});
 
-	/* 
-	validacion de formulario y navegacion entre las rutas
-   */
+	
 	const [error, setError] = useState(null);
 
 	const handleInputChange = (event) => {
@@ -29,9 +25,7 @@ const LoginForm = () => {
 		});
 	};
 
-	/* 
-	obtener los datos del formulario de login
-   */
+	
 	const handleSubmit = async (e) => {
 		e.preventDefault();
 		

@@ -1,6 +1,6 @@
-import React from 'react'
-import ProductsBtn from '../subComponents/ProductsBtn';
-import FavBtn from '../subComponents/FavBtn';
+import React from "react";
+import ProductsBtn from "../subComponents/ProductsBtn";
+import FavBtn from "../subComponents/FavBtn";
 
 export const Card = (props) => {
     return (
@@ -8,8 +8,8 @@ export const Card = (props) => {
             <li className="card">
                 <FavBtn />
                 <div className="img">
-                    <img src={props.img} alt="img" />
-                    <img className='imgS' src={props.imgS}/>
+                    <img src={props.img} alt="image" />
+                    <img className="imgS" src={props.imgS} />
                 </div>
                 <ProductsBtn content={props.price}/>
             </li>
@@ -17,4 +17,4 @@ export const Card = (props) => {
     );
 };
 
-export default Card
+export default Card;
