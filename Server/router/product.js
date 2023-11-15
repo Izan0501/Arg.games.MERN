@@ -7,5 +7,6 @@ const md_upload = multiparty({ uploadDir: '../Server/uploads/product' });
 
 
 api.post('/product', [md_upload], ProductController.createProduct);
+api.get('/products', ProductController.getProduct);
 
 module.exports = api;
