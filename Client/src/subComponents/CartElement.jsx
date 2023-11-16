@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { getProductsFetch } from "../api/getProducts";
-import CartCard from "./CartCard";
+import Card from "./Card";
 
 export const CartElement = () => {
     const [products, setProducts] = useState([]);
@@ -39,7 +39,7 @@ export const CartElement = () => {
                         <div className="dropdown-menu">
                             <ul id="cart">
                                 {products.map((item) => (
-                                    <CartCard key={item._id} item= {item} />
+                                    <Card key={item._id} item= {item} />
                                 ))}
                             </ul>
                             <footer id="dFooter">
