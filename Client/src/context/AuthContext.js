@@ -1,12 +1,12 @@
 import { useState, createContext, useEffect } from 'react';
 import Loader from '../subComponents/Loader';
 import getMeFunction from '../api/getMeFunction';
-import axios from 'axios';
 export const AuthContext = createContext();
 
 export const AuthProvider = ({ children }) => {
 	const [user, setUser] = useState(null);
-	const [loading, setLoading] = useState(true)
+	const [loading, setLoading] = useState(true);
+
 
 	useEffect(() => {
 		(async () => {
@@ -47,6 +47,8 @@ export const AuthProvider = ({ children }) => {
 
 		changeState();
 	};
+
+	
 
 	if (loading) {
 		return (<Loader />

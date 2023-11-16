@@ -11,7 +11,7 @@ export const Card = (props) => {
                     <img src={props.img} alt="image" />
                     <img className="imgS" src={props.imgS} />
                 </div>
-                <ProductsBtn content={props.price}/>
+                <ProductsBtn  content={props.price}/>
             </li>
         </>
     );
