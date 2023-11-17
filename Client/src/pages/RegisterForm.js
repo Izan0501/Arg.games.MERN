@@ -91,7 +91,7 @@ const RegisterForm = () => {
 					/>
 				</div>
 				{error && <p className="alert alert-danger">{error}</p>}
-				<button className='form__button' type="submit">Register</button>
+				<button className='form__button-R' type="submit">Register</button>
 				{success && <p className="alert alert-success">{success}</p>}
 				<p className='form__link'>
 				    Do you already have an account? <Link to="/login">Login</Link>

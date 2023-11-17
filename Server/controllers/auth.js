@@ -24,7 +24,6 @@ async function register(req, res) {
         active: true,
     });
 
-    console.log(user);
 
     //encryptPassword
     const salt = bcrypt.genSaltSync(10)

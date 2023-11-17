@@ -21,7 +21,7 @@ function BackParticles() {
         options={{
           background: {
             color: {
-              value: '##0c192c',
+              value: '#000', //*0c192c
             },
           },
           fps_limit: 120,
@@ -49,14 +49,19 @@ function BackParticles() {
           },
           particles: {
             color: {
-              value: "#e91e63",
+              value: ["#e91e63", "#18fff3", "#1f2ce4" ],
             },
             links: {
-              color: "#23c285",
+              color: "random",
+              blink: false,
               distance: 150,
               enable: true,
               opacity: 0.5,
               width: 1,
+              triangles: {
+                enable:false,
+                opacity: 0.05
+              }
             },
             collisions: {
               enable: false,
@@ -70,6 +75,32 @@ function BackParticles() {
               random: false,
               speed: 6.5,
               straight: true,
+            },
+            modes: {
+              grab : {
+                distance: 400,
+                links: {
+                  opacity: 1
+                }
+              }
+            },
+            connect: {
+              radius: 1000
+            },
+            bubble: {
+              distance:400,
+              size:40,
+              duration: 2,
+              opacity: 0.8
+            },
+            repulse: {
+              distance: 50
+            },
+            push: {
+              quantity: 4
+            },
+            remove: {
+              quantity: 2
             },
             number: {
               density: {
