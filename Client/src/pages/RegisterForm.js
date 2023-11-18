@@ -35,68 +35,80 @@ const RegisterForm = () => {
 	const handleSubmit = async (e) => {
 		e.preventDefault();
 		// data
-		
-		try{
+
+		try {
 			const res = await registerFunction(formData);
 			console.log(res)
 			setError('')
 			setSuccess(res.msg)
-		} catch (error){
+		} catch (error) {
 			console.log(error);
-			setError('Server Fatal')
+			setError('existing user')
 			setSuccess('')
 		}
 	};
 
 	return (
-		<>  
-		    <BackParticles />
+		<>
+			<BackParticles />
 			<div className='form__contain'>
-			<form className='form__reg' onSubmit={handleSubmit}>
-				<h2 className='form__tittle'>Register</h2>
-				<div className='form__content'>
-					<input className='form__input'
-						type="text"
-						name="firstname"
-						placeholder="Nombre"
-						value={formData.firstname}
-						onChange={handleInputChange}
-					/>
-				</div>
-				<div className='form__content'>
-					<input className='form__input'
-						type="text"
-						name="lastname"
-						placeholder="Last Name"
-						value={formData.lastname}
-						onChange={handleInputChange}
-					/>
-				</div>
-				<div className='form__content'>
-					<input className='form__input'
-						type="email"
-						name="email"
-						placeholder="Email"
-						value={formData.email}
-						onChange={handleInputChange}
-					/>
-				</div>
-				<div className='form__content'>
-					<input className='form__input'
-						type="password"
-						name="password"
-						placeholder="Password"
-						value={formData.password}
-						onChange={handleInputChange}
-					/>
-				</div>
-				{error && <p className="alert alert-danger">{error}</p>}
-				<button className='form__button-R' type="submit">Register</button>
-				{success && <p className="alert alert-success">{success}</p>}
-				<p className='form__link'>
-				    Do you already have an account? <Link to="/login">Login</Link>
-				</p>
-			</form>
+				<form className='form__reg' onSubmit={handleSubmit}>
+					<h2 className='form__tittle'>Register</h2>
+					<div className='form__content'>
+						<input className='form__input'
+							type="text"
+							required="required"
+							name="firstname"
+							placeholder=""
+							value={formData.firstname}
+							onChange={handleInputChange}
+						/>
+						<span className='input__span'>First Name</span>
+						<i></i>
+					</div>
+					<div className='form__content'>
+						<input className='form__input'
+							type="text"
+							required="required"
+							name="lastname"
+							placeholder=""
+							value={formData.lastname}
+							onChange={handleInputChange}
+						/>
+						<span className='input__span'>Last Name</span>
+						<i></i>
+					</div>
+					<div className='form__content'>
+						<input className='form__input'
+							type="text"
+							required="required"
+							name="email"
+							placeholder=""
+							value={formData.email}
+							onChange={handleInputChange}
+						/>
+						<span className='input__spanE'>Email</span>
+						<i></i>
+					</div>
+					<div className='form__content'>
+						<input className='form__input'
+							type="password"
+							name="password"
+							required="required"
+							placeholder=""
+							value={formData.password}
+							onChange={handleInputChange}
+						/>
+						<span className='input__span'>Password</span>
+						<i></i>
+					</div>
+					{error && <p className="alert__error alert-danger">{error}</p>}
+					<button className='form__button-R' type="submit">Register</button>
+					{success && <p className="alert alert-success">{success}</p>}
+					<p className='form__link'>
+						Do you already have an account? <Link className='input__link' to="/login">Login</Link>
+					</p>
+				</form>
 			</div>
 		</>
 	);

@@ -107,7 +107,7 @@ function BackParticles() {
                 enable: true,
                 area: 800,
               },
-              value: 100,
+              value: 85,
             },
             opacity: {
               value: 1.5,

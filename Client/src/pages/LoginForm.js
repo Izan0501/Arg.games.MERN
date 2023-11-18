@@ -39,6 +39,8 @@ const LoginForm = () => {
 
 		} catch (error) {
 			console.log(error);
+			setError('Incorrect User')
+	
 		}
 	};
 
@@ -50,26 +52,32 @@ const LoginForm = () => {
 				<h2 className='form__tittle'>Login</h2>
 				<div className='form__content'>
 					<input className='form__input'
-						type="email"
+						type="text"
 						name="email"
-						placeholder="Email"
+						required="required"
+						placeholder=""
 						value={formData.email}
 						onChange={handleInputChange}
 					/>
+					<span className='input__span'>Email</span>
+					<i></i>
 				</div>
 				<div className='form__content'>
 					<input className='form__input'
-						type="password"
+						type="text"
 						name="password"
-						placeholder="Contraseña"
+						required="required"
+						placeholder=""
 						value={formData.password}
 						onChange={handleInputChange}
 					/>
+					<span className='input__span'>Password</span>
+					<i></i>
 				</div> 
-				{error && <p className="alert alert-danger">{error}</p>}
+				{error && <p className="alert__errorLogin alert-danger">{error}</p>}
 				<button className='form__button' type="submit">Login</button>
 				<p className='form__link'>
-					You do not have an account? <Link to="/">Sing Up </Link>
+					You do not have an account? <Link className='input__link ' to="/">Sing Up </Link>
 				</p>
 			</form>
 			</div>
