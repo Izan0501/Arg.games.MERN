@@ -1,17 +1,28 @@
 import React, { useEffect, useState } from "react";
-import { getProductsFetch } from "../api/getProducts";
-import Card from "./Card";
+import CartProducts from "./CartProducts";
 
 export const CartElement = () => {
     const [products, setProducts] = useState([]);
 
+    const getProductsFetch = async () => {
+        try{
+            const url = 'http://localhost:3977/api/v1/products';
+            const res = await fetch(url);
+            const data = await res.json();
+            setProducts(data)
+    
+            if(res.status !==200) throw res;
+            return data;
+        } catch (error) {
+            throw error
+        }
+    }
+
     useEffect(() => {
         getProductsFetch()
-            .then((data) => setProducts(data))
-            .catch((error) => console.log("Error: ", error));
     }, []);
-
     
+    console.log(products);
 
     return (
         <>
@@ -38,9 +49,7 @@ export const CartElement = () => {
                         </button>
                         <div className="dropdown-menu">
                             <ul id="cart">
-                                {products.map((item) => (
-                                    <Card key={item._id} item= {item} />
-                                ))}
+                               <CartProducts products={products} />
                             </ul>
                             <footer id="dFooter">
                                 <template id="templateFooter">

@@ -64,7 +64,7 @@ const LoginForm = () => {
 				</div>
 				<div className='form__content'>
 					<input className='form__input'
-						type="text"
+						type="password"
 						name="password"
 						required="required"
 						placeholder=""
