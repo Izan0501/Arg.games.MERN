@@ -127,7 +127,7 @@ hr {
 #dFooter {
     background: transparent;
     border: 1px solid;
-    color: #e91e63;;
+    color: transparent;
 }
 .btn-shop {
     display: flex;
@@ -166,6 +166,26 @@ hr {
     color: #e91e63;
     font-size: 18px;
 }
+
+.fw-bold {
+    padding-right: 20px !important;
+}
+
+.card-title {
+    color: #e91e63 !important;
+    text-transform: capitalize !important;
+}
+
+.card-img {
+    width: 25% !important;
+    border-radius: 7% !important;
+    transition-duration: .60s !important;
+}
+
+.card-img:hover {
+    transform: scale(.80) !important;
+}
+
 /**responsiveMoldel**/
 @media(min-width: 1920px) {
     header .navegation {

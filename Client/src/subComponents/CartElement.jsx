@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import CartProducts from "./CartProducts";
 
+
 export const CartElement = () => {
     const [products, setProducts] = useState([]);
 

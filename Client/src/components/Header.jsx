@@ -53,23 +53,6 @@ export const Header = () => {
                     <Profile />
                 </ul>
             </header>
-            <template id="template">
-                <li className="p-2 w-50 list-group-item dis align-items-center">
-                    <img className="template-img" src="#" alt="img" />
-                    <span className="lead">Games</span>
-                    <span className="badge rounded-pill">10</span>
-                    <div>
-                        <button className="btn btn-sm btn-success">+</button>
-                        <button className="btn btn-sm btn-danger">-</button>
-                        <hr />
-                    </div>
-                </li>
-                <div>
-                    <p className="textPrice">
-                        Total: $<span class="spanPrice">19</span>
-                    </p>
-                </div>
-            </template>
         </>
     );
 };
