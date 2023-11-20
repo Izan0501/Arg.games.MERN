@@ -1,21 +1,24 @@
 const addCartProduct = (e) => {
     let cartProducts = [];
 
-    const product = {
-        tittle: e.target.dataset.game,
+    const products= {
+        title: e.target.dataset.game,
+        id: e.target.dataset.game,
         amount: 1,
-        price: parseInt( e.target.dataset.sell),
+        price: parseInt( e.target.dataset.price),
         img: e.target.dataset.img,
     }
 
-    const position = cartProducts.findIndex(item => {
-        return item.tittle === product.tittle
+    const position = cartProducts.findIndex(products => {
+        return products.title === products.title
     })
     if(position === -1) {
-        cartProducts.push(product);   
+        cartProducts.push(products);   
     } else {
         cartProducts[position].amount++
     }
+    
+  
     console.log(cartProducts)
 };
 

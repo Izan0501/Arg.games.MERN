@@ -15,9 +15,6 @@ const CartCard = ({ item }) => {
                     <p>
                         <span className='fw-bold'> {amount} =</span>U$D {price}
                     </p>
-                    <p>
-                        <span className='fw-bold'></span>
-                    </p>
                     <hr />
                 </div>
             </div>

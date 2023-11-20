@@ -19,11 +19,14 @@ export const CartElement = () => {
         }
     }
 
+
+
+
+
     useEffect(() => {
         getProductsFetch()
     }, []);
     
-    console.log(products);
 
     return (
         <>
