@@ -1,7 +1,7 @@
 .loader-content {
     width: 100%;
     height: 100vh;
-    background: #0c192c !important;
+    background: #000 !important;
     position: relative;
     display: flex;
     margin-top: 0;
