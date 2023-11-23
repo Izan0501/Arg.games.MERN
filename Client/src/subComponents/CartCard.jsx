@@ -1,7 +1,6 @@
 import React from 'react'
 
 const CartCard = ({ item }) => {
-    console.log(item);
 
     const { title, price, amount, image } = item;
 

@@ -20,9 +20,6 @@ export const CartElement = () => {
     }
 
 
-
-
-
     useEffect(() => {
         getProductsFetch()
     }, []);
@@ -73,7 +70,8 @@ export const CartElement = () => {
                         0
                     </div>
                 </a>
-            </li></>
+            </li>
+        </>
     )
 }
  export default CartElement;
