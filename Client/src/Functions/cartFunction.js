@@ -1,10 +1,14 @@
-const CartProduct = async () => {
-    
+const CartFunction = async (props) => {
+    const { title, _id ,amount, price, image } = props.item ?? {};
 
-    const url = 'http://localhost:3977/api/v1/products';
-    const res = await fetch(url);
-    const data = await res.json();
-    console.log(data)
+    const productCart = {
+        _id: _id,
+        title:title,
+        amount: amount,
+        price: price,
+        image: image,
+    }
+   console.log(productCart);
 
     
   
@@ -12,4 +16,4 @@ const CartProduct = async () => {
 
 
 
-export default CartProduct
+export default CartFunction;

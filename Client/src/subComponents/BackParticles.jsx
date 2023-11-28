@@ -56,7 +56,7 @@ function BackParticles() {
               blink: false,
               distance: 150,
               enable: true,
-              opacity: 0.5,
+              opacity: 0,
               width: 1,
               triangles: {
                 enable:false,

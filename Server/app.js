@@ -17,7 +17,8 @@ app.use(cors());
 const authRoutes = require('./router/auth');
 const userRoutes = require('./router/user');
 const productRoutes = require('./router/product');
-
+const productsPs4Routes = require('./router/productsPs4');
+const productsXboxRoutes = require('./router/productsXbox');
 //config body-parser
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(bodyParser.json());
@@ -29,5 +30,7 @@ app.use(express.static('uploads'));
 app.use(`/api/${apiVersion}`, authRoutes);// http://localhost:3977/api/v1/auth/register
 app.use(`/api/${apiVersion}`, userRoutes);// http://localhost:3977/api/v1/auth/user/me
 app.use(`/api/${apiVersion}`, productRoutes);
+app.use(`/api/${apiVersion}`, productsPs4Routes);
+app.use(`/api/${apiVersion}`, productsXboxRoutes);
 
 module.exports = app;
