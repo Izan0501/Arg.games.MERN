@@ -6,8 +6,6 @@ export const AuthContext = createContext();
 export const AuthProvider = ({ children }) => {
 	const [user, setUser] = useState(null);
 	const [loading, setLoading] = useState(true);
-	const [cart, setCart] = useState([]);
-
 
 	useEffect(() => {
 		(async () => {
@@ -38,8 +36,6 @@ export const AuthProvider = ({ children }) => {
 		setUser,
 		login,
 		logout,
-		cart,
-		setCart,
 	};
 
 	if (loading) {

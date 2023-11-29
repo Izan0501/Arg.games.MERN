@@ -1,3 +1,5 @@
+import CartCard from "./CartCard";
+
 export const CartElement = () => {
 
     return (
@@ -25,7 +27,7 @@ export const CartElement = () => {
                         </button>
                         <div className="dropdown-menu">
                             <ul id="cart">
-                               
+                               <CartCard />
                             </ul>
                             <footer id="dFooter">
                                 <template id="templateFooter">

@@ -1,17 +1,19 @@
-import React, { useEffect, useState } from "react";
 import { getProductsFetch } from "../api/getProducts";
+import React, { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import Card from "./Card";
 
+
 const Ps4Section = () => {
     const [products, setProducts] = useState([]);
+    
 
     useEffect(() => {
         getProductsFetch()
             .then((data) => setProducts(data))
             .catch((error) => console.log("error", error));
     }, []);
-
+    
     return (
         <>
             <motion.div
@@ -32,5 +34,8 @@ const Ps4Section = () => {
         </>
     );
 };
+
+
+
 
 export default Ps4Section;
