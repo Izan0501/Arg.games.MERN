@@ -7,7 +7,7 @@ const Card = (props) => {
     const { price, image} = props.item ?? {};
     const [cart, setCart] = useState([]);
 
-    const showID = () => {
+    const showItem = () => {
         console.log(props);
         setCart([...cart, props]);
     };
@@ -20,7 +20,7 @@ const Card = (props) => {
                     <img src={"http://localhost:3977/" + image} alt={image} />
                 </motion.div>
                 <h4>
-                    <button type="button" className="btn btn-outline" onClick={showID}>
+                    <button type="button" className="btn btn-outline" onClick={showItem}>
                         {price}
                     </button>
                 </h4>
